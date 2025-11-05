@@ -24,9 +24,10 @@ public abstract class Usuario {
 
     private String nome;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String email;
 
+    @Column(nullable = false)
     private String senha;
     
      @Enumerated(EnumType.STRING)
@@ -40,7 +41,7 @@ public abstract class Usuario {
         this.id = id;
     }
 
-    @Enumerated(EnumType.STRING)
+    //@Enumerated(EnumType.STRING)
     public String getNome() {
         return nome;
     }
@@ -64,6 +65,7 @@ public abstract class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+    
     public TipoUsuario getTipo() {
         return tipo;
     }

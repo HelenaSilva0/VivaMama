@@ -6,5 +6,5 @@ package com.vivamamadsc.vivamamadsc;
 
 
 public enum TipoUsuario {
-     PACIENTE;
+     PACIENTE, MEDICO;
 }

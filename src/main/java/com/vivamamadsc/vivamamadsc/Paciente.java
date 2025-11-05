@@ -16,11 +16,13 @@ import java.util.Date;
 public class Paciente extends Usuario {
     
 @Temporal(TemporalType.DATE)
+@Column(name = "DT_NASCIMENTO", nullable = true)
     private Date dataNascimento;
     
-@Lob
+@Lob//arquivoPDF - blob
 @Column(name = "HISTORICOFAMILIAR")
     private String historicoFamiliar;
+
 
     public Paciente() {
         setTipo(TipoUsuario.PACIENTE);
@@ -41,5 +43,5 @@ public class Paciente extends Usuario {
     public void setHistoricoFamiliar(String historicoFamiliar) {
         this.historicoFamiliar = historicoFamiliar;
     }
- 
+    
 }

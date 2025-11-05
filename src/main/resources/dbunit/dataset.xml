@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <USUARIO NOME="Ciclano da Silva" EMAIL="ciclano@gmail.com" SENHA="teste" TIPO="PACIENTE" DTYPE="Paciente"/>
+    <PACIENTE ID="1" DT_NASCIMENTO="2004-04-23" HISTORICOFAMILIAR="Sem histórico familiar."/>
+</dataset>
