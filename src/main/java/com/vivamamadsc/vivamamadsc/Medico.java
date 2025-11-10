@@ -4,14 +4,17 @@
  */
 package com.vivamamadsc.vivamamadsc;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 
 @Entity
-public class Medico extends Usuario {
+public class Medico extends Usuario {// colocar o descriminator
 
+    // Colocar o tamanho das strings
     @Column(unique = true, nullable = false)
     private String crm;
-    
+
+    // Separar o atributo especialidade numa classe para criar o relacionamento many to many
     @Column(name = "ESPECIALIDADE")
     private String especialidade;
 
